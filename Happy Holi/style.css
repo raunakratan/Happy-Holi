@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    overflow: hidden;
+    background: black;
+    background-size: cover;
+}
+
+/* Navbar Styling */
+.navbar {
+    margin-top: 10px;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    filter: drop-shadow(0 0 10px white);
+}
+
+/* Text Content Alignment */
+.myinfo {
+    position: absolute;
+    top: 50%;
+    left: 5%; /* Moves text further left */
+    transform: translateY(-50%);
+    width: 600px;
+    color: white;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.73);
+}
+
+/* Glowing Effect for Main Heading */
+h1 {
+    font-size: 90px;
+    font-weight: bold;
+    text-shadow: 0 0 10px red, 0 0 20px yellow;
+    margin-bottom: 10px; /* Reduce space below heading */
+}
+
+/* Highlighting 'Raunak' */
+.highlight {
+    color: cyan;
+    text-shadow: 0 0 15px cyan, 0 0 30px blue;
+}
+
+/* Bold and Red Styling */
+.bold-red {
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+    text-shadow: 0 0 10px red, 0 0 20px green;
+    margin: 15px 0;
+}
+
+/* Happy Holi Text Styling */
+.holi {
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+    text-shadow: 0 0 10px blue, 0 0 20px green;
+    animation: pulse 2s infinite;
+    margin-bottom: 10px; /* Reduce space */
+}
+
+/* Animated Text */
+.hue {
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0 0 10px red, 0 0 20px yellow;
+    animation: pulse 2s infinite;
+}
+
+/* Navbar Links */
+.nav-link {
+    color: white;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: rgb(255, 0, 0);
+    text-shadow: 0 0 20px black;
+}
+
+/* Navbar Items */
+.nav-item {
+    color: white;
+    margin-left: 20px;
+}
+
+/* Button Styling */
+.btn {
+    border: none;
+    color: white;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 50px;
+    padding: 8px 20px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: white;
+    color: black;
+}
+
+/* Logo Glowing Effect */
+.log {
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 0 0 10px red, 0 0 20px yellow;
+    animation: glow-text 1.5s infinite alternate;
+}
+
+/* Background Video Full-Screen Fix */
+video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -2;
+    filter: brightness(75%);
+}
+
+/* Glowing Animations */
+@keyframes glow-text {
+    0% {
+        text-shadow: 0 0 10px red, 0 0 20px yellow;
+    }
+    100% {
+        text-shadow: 0 0 20px orange, 0 0 40px pink;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        text-shadow: 0 0 10px red, 0 0 20px yellow;
+    }
+    100% {
+        text-shadow: 0 0 20px blue, 0 0 40px green;
+    }
+}
+
+/* 📱 Mobile View Fix */
+@media (max-width: 768px) {
+    .myinfo {
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 90%;
+        gap: 5px;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    .bold-red {
+        font-size: 16px;
+    }
+
+    .holi {
+        font-size: 25px;
+    }
+
+    .hue {
+        font-size: 25px;
+    }
+
+    .log {
+        font-size: 22px;
+    }
+
+    .navbar .container {
+        text-align: center;
+    }
+}
